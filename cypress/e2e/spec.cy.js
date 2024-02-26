@@ -13,6 +13,6 @@ describe('template spec', () => {
 
   it("Test mapChain", () => {
     let names = ["Brad", "Smith", "Matt", "Wilmer"]
-    //TODO
+    //TODO check names and see which ones start with B
   })
 })

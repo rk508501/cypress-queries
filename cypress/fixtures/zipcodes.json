@@ -1,5 +1,5 @@
 {
     "name": "test_module",
-    "california_zips":[95112],
-    "carolina_zips":[28270]
+    "california_zips":[95112, 95117],
+    "carolina_zips":[28270, 28277]
 }
