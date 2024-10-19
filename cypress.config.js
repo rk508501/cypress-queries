@@ -7,10 +7,11 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       on('task', {
         logAbsolutePaths() {
-          const folderToSearch = path.join(config.projectRoot, 'cypress', 'integration');
+          const folderToSearch = path.join(config.projectRoot, 'cypress', 'e2e');
+          console.log(`Search folder ${folderToSearch}`)
 
           const files = fs.readdirSync(folderToSearch);
-          const specFiles = files.filter(file => file.endsWith('.spec.js'));
+          const specFiles = files.filter(file => file.endsWith('.js'));
           const absolutePaths = specFiles.map(file => path.resolve(folderToSearch, file));
 
           // Log to terminal using console.log
